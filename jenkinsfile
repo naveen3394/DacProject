@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+    stages{
+        stage("wewlcome"){
+            steps{
+                git credentialsId: 'github', url: 'https://github.com/naveen3394/demotext.git'
+            }
+        }
+        stage("maven build"){
+            steps{
+                echo "welcome to jenkns maven build"
+            }
+        }
+        
+        
+    }
+}
