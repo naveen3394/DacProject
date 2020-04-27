@@ -13,8 +13,8 @@ pipeline {
 
         stage ('Build') {
             steps {
-          cd   /home/sunbeam/DAC PROJECT/Food Ordering Project/spring boot project/pdf_file_upload/
-                sh 'mvn -Dmaven.test.failure.ignore=true install' 
+                    cd /home/sunbeam/DAC_PROJECT/Food_Ordering_Project/spring_boot_project/pdf_file_upload/
+                      sh 'mvn -Dmaven.test.failure.ignore=true install' 
             }
           
             }
